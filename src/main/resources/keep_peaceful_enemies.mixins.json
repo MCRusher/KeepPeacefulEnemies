@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "com.mcrusher.keep_peaceful_enemies.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"KeepPeacefulEnemiesMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.mcrusher",
+		"id": "keep_peaceful_enemies",
+		"version": "${version}",
+		"metadata": {
+			"name": "Keep Peaceful Enemies",
+			"description": "Named hostile entities won't despawn when the game is set to peaceful. That's it",
+			"contributors": {
+				"Your name here": "MCRusher"
+			},
+			"contact": {
+				"homepage": "https://www.github.com/MCRusher/KeepPeacefulEnemies",
+				"issues": "https://github.com/MCRusher/KeepPeacefulEnemies/issues",
+				"sources": "https://www.github.com/MCRusher/KeepPeacefulEnemies"
+			},
+			"icon": "assets/keep_peaceful_enemies/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.mcrusher.keep_peaceful_enemies.KeepPeacefulEnemies"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.0.2"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20"
+			}
+		]
+	},
+	"mixin": "keep_peaceful_enemies.mixins.json"
+}
